@@ -1,0 +1,6 @@
+1. 20 is printed. This is because, since add is true, the if block is entered and result is 10 + 10 = 20, which is directly printed.
+2. 20 is printed. This is because since result is declared with var, it exists beyond its block scope (the if block). Thus result is accessible anywhere within the sumValues function. 
+3. 20 is printed. THis is becuase, since add is true, the idf block is entered and result is 10 + 10 = 20, which is directly printed.
+4. There is an error. This is because the result variable is declared with let, meaning its block scope if within the if statement and is then unaccessible out of the if statement. Since there are no other variables named result in the block of sumValues, it produces an error.
+5. There is an error. This is because since result is declared with const, it can no longer be reassigned -- which happend in line 7. 
+6. Same reason as above. It's alos worse because result is a const declared within the for block so even if the variable wasn't reassigned there would stll be an error when accessing it from outside the block scope. 
